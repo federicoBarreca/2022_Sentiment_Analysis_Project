@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>FDS PROJECT</h1>
+</div>
+
+<div class="row">
+    <div class="col">
+        <h2>GET EXAMPLE</h2>
+        <form action="{{ url_for('example') }}" method="POST">
+            <label>Enter text:</label>
+            <input type="text" name="test" />
+            <input type="submit" name="next" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <label>{{ result }}</label>
+    </div>
+</div>
+
+{% endblock %}

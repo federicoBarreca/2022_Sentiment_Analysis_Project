@@ -28,19 +28,26 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FDS_project_2022\repo\functions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="FDS_project_2022\__init__.py" />
     <Compile Include="FDS_project_2022\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FDS_project_2022\" />
+    <Folder Include="FDS_project_2022\repo\" />
     <Folder Include="FDS_project_2022\static\" />
     <Folder Include="FDS_project_2022\static\content\" />
     <Folder Include="FDS_project_2022\static\fonts\" />
     <Folder Include="FDS_project_2022\static\scripts\" />
     <Folder Include="FDS_project_2022\templates\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="web.config" />
     <Content Include="requirements.txt" />
     <Content Include="FDS_project_2022\static\content\bootstrap.css" />
     <Content Include="FDS_project_2022\static\content\bootstrap.min.css" />

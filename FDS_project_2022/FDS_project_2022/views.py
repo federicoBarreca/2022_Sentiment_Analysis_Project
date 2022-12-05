@@ -5,10 +5,13 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template, request
 from FDS_project_2022 import app
+from FDS_project_2022.repo.functions import sigmoid
 
 @app.route('/')
 @app.route('/home')
 def home():
+    print('Request for index page received')
+
     """Renders the home page."""
     return render_template(
         'index.html',
@@ -44,4 +47,4 @@ def example():
     return render_template('index.html',
         title='Home Page',
         year=datetime.now().year,
-        result=test)
+        result=sigmoid(test))

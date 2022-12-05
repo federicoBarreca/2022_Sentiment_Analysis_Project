@@ -18,6 +18,7 @@
     <Name>FDS_project_2022</Name>
     <RootNamespace>FDS_project_2022</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,6 +29,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FDS_project_2022\models\Test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FDS_project_2022\repo\functions.py">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FDS_project_2022\" />
+    <Folder Include="FDS_project_2022\models\" />
     <Folder Include="FDS_project_2022\repo\" />
     <Folder Include="FDS_project_2022\static\" />
     <Folder Include="FDS_project_2022\static\content\" />

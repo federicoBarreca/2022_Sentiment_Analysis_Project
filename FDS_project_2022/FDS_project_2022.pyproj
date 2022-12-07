@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FDS_project_2022\repo\go_emotions_dataset.csv" />
+    <Content Include="FDS_project_2022\repo\lrCountVectorizer.joblib" />
+    <Content Include="FDS_project_2022\repo\lrTrainedModel.joblib" />
     <Content Include="web.config" />
     <Content Include="requirements.txt" />
     <Content Include="FDS_project_2022\static\content\bootstrap.css" />

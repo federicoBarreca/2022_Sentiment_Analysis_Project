@@ -32,9 +32,7 @@
     <Compile Include="FDS_project_2022\models\Test.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FDS_project_2022\repo\functions.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="FDS_project_2022\repo\functions.py" />
     <Compile Include="runserver.py" />
     <Compile Include="FDS_project_2022\__init__.py" />
     <Compile Include="FDS_project_2022\views.py" />
@@ -52,9 +50,8 @@
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FDS_project_2022\repo\go_emotions_dataset.csv" />
-    <Content Include="FDS_project_2022\repo\lrCountVectorizer.joblib" />
-    <Content Include="FDS_project_2022\repo\lrTrainedModel.joblib" />
+    <Content Include="FDS_project_2022\repo\FittedCountVectorizer.joblib" />
+    <Content Include="FDS_project_2022\repo\LogisticRegressionTrainedModel.joblib" />
     <Content Include="web.config" />
     <Content Include="requirements.txt" />
     <Content Include="FDS_project_2022\static\content\bootstrap.css" />

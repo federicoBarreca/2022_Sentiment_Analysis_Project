@@ -1,14 +1,9 @@
-from joblib import dump, load
+from joblib import load
 
+def predictEmotion(x):
 
-
-def testFunction(x):
-
-    #dump(cv, 'FDS_project_2022/repo/lrCountVectorizer.joblib')
-    #dump(lrModel, 'FDS_project_2022/repo/lrTrainedModel.joblib')
-
-    lrModel = load('FDS_project_2022/repo/lrTrainedModel.joblib')
-    cv = load('FDS_project_2022/repo/lrCountVectorizer.joblib')
+    lrModel = load('FDS_project_2022/repo/LogisticRegressionTrainedModel.joblib')
+    cv = load('FDS_project_2022/repo/FittedCountVectorizer.joblib')
     x = cv.transform([x])
 
     res = lrModel.predict(x)

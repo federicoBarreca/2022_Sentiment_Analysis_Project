@@ -39,12 +39,20 @@ def about():
         message='Your application description page.'
     )
 
-@app.route('/example', methods=['GET', 'POST'])
-def example():
-    test = ""
+@app.route('/predictemotion', methods=['GET', 'POST'])
+def predictemotion():
+    ret = "An error occurred"
     if request.method == 'POST':
-        test = request.form['test']
+        inputSentence = request.form['inputsentence']
+        emotion = predictEmotion(inputSentence)
+        if emotion == "positive":
+            ret = "Positive emotion detected :)"
+        elif emotion == "negative":
+            ret = "Negative emotion detected :("
+        elif emotion == "ambiguous":
+            ret = "Ambiguous emotion detected :/"
+                
     return render_template('index.html',
         title='Home Page',
         year=datetime.now().year,
-        result=testFunction(test))
+        result=ret)

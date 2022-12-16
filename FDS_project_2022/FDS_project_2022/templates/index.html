@@ -8,10 +8,10 @@
 
 <div class="row">
     <div class="col">
-        <h2>GET EXAMPLE</h2>
-        <form action="{{ url_for('example') }}" method="POST">
+        <h2>Predict Emotion</h2>
+        <form action="{{ url_for('predictemotion') }}" method="POST">
             <label>Enter text:</label>
-            <input type="text" name="test" />
+            <input type="text" name="inputsentence" />
             <input type="submit" name="next" value="Submit">
         </form>
     </div>

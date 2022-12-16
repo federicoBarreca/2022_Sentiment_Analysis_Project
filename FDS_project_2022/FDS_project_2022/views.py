@@ -6,6 +6,7 @@ from datetime import datetime
 from flask import render_template, request
 from FDS_project_2022 import app
 from FDS_project_2022.repo.functions import *
+import html
 
 @app.route('/')
 @app.route('/home')
@@ -46,11 +47,11 @@ def predictemotion():
         inputSentence = request.form['inputsentence']
         emotion = predictEmotion(inputSentence)
         if emotion == "positive":
-            ret = "Positive emotion detected :)"
+            ret = "Positive emotion detected "+ html.unescape("&#x1F60A")
         elif emotion == "negative":
-            ret = "Negative emotion detected :("
+            ret = "Negative emotion detected "+ html.unescape("&#x1F623")
         elif emotion == "ambiguous":
-            ret = "Ambiguous emotion detected :/"
+            ret = "Ambiguous emotion detected "+ html.unescape("&#x1F928")
                 
     return render_template('index.html',
         title='Home Page',

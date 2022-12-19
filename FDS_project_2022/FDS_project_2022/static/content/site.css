@@ -40,3 +40,95 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.schermo {
+    content: "";
+    background: url("../uova.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .schermo h1 {
+        background: white;
+        width: fit-content;
+        padding: 0 4px;
+        border-radius: 3px;
+        font-size: 2.5em;
+    }
+
+.my_label {
+    font-size: 18px;
+}
+
+.box-input {
+    border: 1px solid #C5C8D2;
+    border-radius: 8px;
+    width: 500px;
+    height: 32px;
+    margin: 0 12px 0 0;
+    padding: 0 12px;
+}
+
+.btn {
+    border: 1px solid #eb9961;
+    background: #eb9961;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    padding: 0 6px;
+}
+
+    .btn:hover {
+        border: 1px solid #542c12;
+        background: #542c12;
+        color: white;
+    }
+
+.navbar {
+    display: none;
+}
+
+.col-result {
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+    /*animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;*/
+}
+
+    .col-result img {
+        width: 300px;
+        height: 300px;
+        margin: 12px 0;
+    }
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer.container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.form-inline {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.h3-result {
+    font-style: italic;
+    margin-bottom: 0;
+}

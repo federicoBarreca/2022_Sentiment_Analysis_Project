@@ -37,6 +37,7 @@
   <ItemGroup>
     <Folder Include="FDS_project_2022\" />
     <Folder Include="FDS_project_2022\repo\" />
+    <Folder Include="FDS_project_2022\repo\__pycache__\" />
     <Folder Include="FDS_project_2022\static\" />
     <Folder Include="FDS_project_2022\static\content\" />
     <Folder Include="FDS_project_2022\static\fonts\" />
@@ -48,6 +49,10 @@
   <ItemGroup>
     <Content Include="FDS_project_2022\repo\FittedCountVectorizer.joblib" />
     <Content Include="FDS_project_2022\repo\LogisticRegressionTrainedModel.joblib" />
+    <Content Include="FDS_project_2022\repo\__pycache__\functions.cpython-39.pyc" />
+    <Content Include="FDS_project_2022\static\happy.jpeg" />
+    <Content Include="FDS_project_2022\static\sad.jpeg" />
+    <Content Include="FDS_project_2022\static\uova.jpg" />
     <Content Include="web.config" />
     <Content Include="requirements.txt" />
     <Content Include="FDS_project_2022\static\content\bootstrap.css" />

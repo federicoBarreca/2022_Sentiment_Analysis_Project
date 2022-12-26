@@ -1,5 +1,8 @@
 # FDS_project_2022
 
-1. Installare le librerie in requirements.txt (per ora ignorare la versione)
-2. Entrare in ./FDS_Project da terminale ed eseguire "python runserver.py" oppure "python3 runserver.py"
-3. Verrà avviato il server sul porta locale 8000 quindi aprire un browser e inserire l'url localhost:8000
+ Emotion Recognition
+
+1. Install libraries specified in requirements.txt
+2. From ./FDS_Project run "python runserver.py" or python3 runserver.py" in command line.
+3. The server runs on port 8000 so open a browser on localhost:8000
+4. Input a sentence in the textbox and press the "Predict" button to get the sentence classified "positive" or "negative"
